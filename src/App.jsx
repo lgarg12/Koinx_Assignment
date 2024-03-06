@@ -1,17 +1,19 @@
-import React from 'react'
+import React from 'react';
 import './App.css'
-import Navbar from './component/Navbar'
-import Home from './component/Home'
-import Footer from './component/Footer'
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 function App() {
 
   return (
-    <div>
-      <Navbar/>
-      <Home/>
+    <div className='bg-[#EFF2F5] flex justify-center items-center'>
+      <div className=''>
+        <Navbar/>
+        <Home/>
+      </div>
     </div>
-    )
+  )
 }
 
-export default App
+export default App;

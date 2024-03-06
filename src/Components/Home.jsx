@@ -3,22 +3,32 @@ import TradingViewWidget from './TradingViewWidget';
 import { FaArrowRight } from "react-icons/fa6";
 import TrendingCoin from './TrendingCoin';
 import Perform from './Performance'
-import Sentiment from '../component/Sentiment'
-import About from '../component/About'
-import Token from '../component/Token'
-import Team from '../component/Team'
+import Sentiment from './Sentiment'
+import About from './About'
+import Token from './Token'
+import Team from './Team'
+import Footer from './Footer'
+
 
 const Home = () => {
   return (
     <div className=''>
-        <div className='max-w-[1328px] flex flex-col md:flex-row mx-auto gap-4 mt-[132px] justify-center'>
-            <div className='h-[711px] w-[881px] rounded-lg '>
+        <div className='flex flex-col md:flex-row mx-auto gap-4 mt-[132px] justify-center md:items-start items-center'>
+            <div className='h-[711px] w-[600px] md:w-[881px] rounded-lg'>
                 <TradingViewWidget/>
+                <div className=''>
+                    <Perform/>
+                    <Sentiment/>
+                    <About/>
+                    <Token/>
+                    <Team/>
+                    
+                </div>
             </div>
             
 
             {/* Right Side  */}
-            <div className='flex flex-col rounded-[16px] gap-[20px]'>
+            <div className='flex flex-col rounded-[16px] gap-[20px] items-center'>
             <div className='w-[426px] h-[515px] p-[31px 16px 31px 16px] bg-[#0052FE] rounded-[8px] gap-[19px] flex flex-col items-center justify-center'>
                 <div className='w-[327px] h-[182px] gap-[14px] flex flex-col items-center justify-center'>
                     <h2 className='w-[268px] h-[80px] text-white leading-10 text-center font-medium text-[24px]'>Get Started with KoinX for FREE</h2>
